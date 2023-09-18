@@ -49,16 +49,33 @@ This tutorial I examine various network traffic protocols between two Azure virt
           [IMAGE - all files in azure rg]
       </li>
       <li><h3 id = "step_2">Observing ICMP traffic</h3>
-          I accessed the virtual machine running Windows using Remote Desktop and downloaded WireShark onto it.
-          <br>
+          Using Remote Desktop, I accessed the virtual machine running Windows and downloaded WireShark onto it.
+          <br><br>
           [IMAGE - wireshark]
-          <br>
-          WireShark is an open-source packet-analyzer, we will use it to examine how some network protocols work between the two virtual machines we have. Install and open WireShark and allow it to start capturing packets. First, we are going to filter out ICMP traffic only.
-          [IMAGE]
+          <br><br>
+          WireShark is an open-source packet-analyzer, we will use it to examine how some network protocols work between the two virtual machines we have. Install and open WireShark to allow it to start capturing packets. First, we are going to filter out ICMP traffic only.
+          <br><br>
+          [IMAGE - icmp filter]
+          <br><br>
           Using the command, ping the private IP of the Ubuntu virtual machine and observe the actions of the ping request in WireShark.
+          <br><br>
+          [IMAGE - cmd line and maybe wireshark results]
           <blockquote>
               Note: The Ubuntu VM is not connected to the internet, so you can't ping its public IP address.
           </blockquote>
+          <br><br>
+          After examining how the computers send the ICMP data back and forth between each other after a single ping request, I initiated a continuous ping and returned to observe the data packets in wireshark.
+          <br><br>
+          [IMAGE- cmd line continuous ping]
+          <br><br>
+          Next, I set up a firewall to block any incoming ICMP requests to the Ubuntu virtual machine. To do this, return to Azure and open the Network Security Group of the Ubuntu virtual machine. Navigate to the Inbound Security Rules page and click "Add". 
+          <br><br>
+          [IMAGE - navigation & rules overview]
+          <br><br>
+          Return to the Windows VM to see the ping fail to return any data and WireShark no longer recieving any data packets back from the Ubuntu VM.
+          <br><br>
+          [IMAGE - failed ping in cmd and wireshark]
+          <br>
       </li>
       <li><h3 id = "step_3">Observing SSH traffic</h3>
       </li>
