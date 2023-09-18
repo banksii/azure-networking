@@ -22,8 +22,8 @@ This tutorial I examine various network traffic protocols between two Azure virt
       <li><a href = "#step_2">Observing ICMP traffic</a></li>
       <li><a href = "#step_3">Observing SSH traffic</a></li>
       <li><a href = "#step_4">Observing DHCP traffic</a></li>
-      <li><a href = "#step_5">Observe DNS traffic</a></li>
-      <li><a href = "#step_6">Observe RDP traffic</a></li>
+      <li><a href = "#step_5">Observing DNS traffic</a></li>
+      <li><a href = "#step_6">Observing RDP traffic</a></li>
     </ol>
 
 <h2>Tutorial</h2>
@@ -31,5 +31,9 @@ This tutorial I examine various network traffic protocols between two Azure virt
       <li><h3 id = "step_1">Setting up resouces</h3>
           setup machines
       </li>
-      <li></li>
+      <li><h3 id = "step_2">Observing ICMP traffic</h3></li>
+      <li><h3 id = "step_3">Observing SSH traffic</h3></li>
+      <li><h3 id = "step_4">Observing DHCP traffic</h3></li>
+      <li><h3 id = "step_5">Observing DNS traffic</h3></li>
+      <li><h3 id = "step_6">Observing RDP traffic</h3></li>
     </ol>
