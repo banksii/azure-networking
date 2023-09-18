@@ -63,7 +63,7 @@ This tutorial I examine various network traffic protocols between two Azure virt
           <blockquote>
               Note: The Ubuntu VM is not connected to the internet, so you can't ping its public IP address.
           </blockquote>
-          <br><br>
+          <br>
           After examining how the computers send the ICMP data back and forth between each other after a single ping request, I initiated a continuous ping and returned to observe the data packets in wireshark.
           <br><br>
           [IMAGE- cmd line continuous ping]
@@ -72,9 +72,11 @@ This tutorial I examine various network traffic protocols between two Azure virt
           <br><br>
           [IMAGE - navigation & rules overview]
           <br><br>
-          Return to the Windows VM to see the ping fail to return any data and WireShark no longer recieving any data packets back from the Ubuntu VM.
+          Return to the Windows VM to see the ping fail to return any data in the command line and WireShark no longer recieving any data packets back from the Ubuntu VM.
           <br><br>
           [IMAGE - failed ping in cmd and wireshark]
+          <br><br>
+          Turn off the new rule and observe the requests going through once again. Turn off the continuous ping in the command line with CTRL + C.
           <br>
       </li>
       <li><h3 id = "step_3">Observing SSH traffic</h3>
