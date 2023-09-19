@@ -27,6 +27,7 @@ This tutorial I examine various network traffic protocols between two Azure virt
       <li><a href = "#step_4">Observing DHCP traffic</a></li>
       <li><a href = "#step_5">Observing DNS traffic</a></li>
       <li><a href = "#step_6">Observing RDP traffic</a></li>
+      <li><a href = "#step_7">Cleaning up</a></li>
     </ol>
 
 <h2>Tutorial</h2>
