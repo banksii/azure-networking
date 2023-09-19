@@ -80,7 +80,7 @@ This tutorial I examine various network traffic protocols between two Azure virt
           <br>
       </li>
       <li><h3 id = "step_3">Observing SSH traffic</h3>
-          In WireShark, filter the packets by SSH. This can be done by typing "tcp port == 22J" in the search bar.
+          In WireShark, filter the packets by SSH (TCP port 22). This can be done by typing "tcp port == 22J" in the search bar.
           <br><br>
           [Image - filtered by SSH/port 22 data packets]
           <br><br>
@@ -96,8 +96,16 @@ This tutorial I examine various network traffic protocols between two Azure virt
           [image - cmd prompt and also some wireshark same image only one]
       </li>
       <li><h3 id = "step_5">Observing DNS traffic</h3>
-          
+          Filter by DNS (port 53) traffic in WireShark and use nslookup on the command line to obtain the IP address(es) of Google.
+          <br><br>
+          [image - command line and wireshark in back]
       </li>
       <li><h3 id = "step_6">Observing RDP traffic</h3>
+          Filter by RDP traffic (TCP port 3389) in WireShark. Traffic should be non-stop because Remote Desktop Protocol is continuously showing us a livestream of the Windows virtual machine we are presently working on.
+          <br><br>
+          [image - wireshark ig]
+      </li>
+      <li><h3 id = "step_7">Cleaning up</h3>
+          End the remote connection and return to Azure to delete both virtual machines and the resource group they reside in.
       </li>
     </ol>
