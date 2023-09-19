@@ -80,10 +80,23 @@ This tutorial I examine various network traffic protocols between two Azure virt
           <br>
       </li>
       <li><h3 id = "step_3">Observing SSH traffic</h3>
+          In WireShark, filter the packets by SSH. This can be done by typing "tcp port == 22J" in the search bar.
+          <br><br>
+          [Image - filtered by SSH/port 22 data packets]
+          <br><br>
+          Now we will use the SSH command to access the Ubuntu virtual machine. To do so, we need the username and password we assigned it, as well as its private IP address. In the command prompt, type in "ssh username@privateip" and enter the password when prompted.
+          <br><br>
+          [Image - command prompt]
+          <br><br>
+          We can observe the data traffic in WireShark whenever we type in commands through SSH. Type 'Exit' in the command prompt to end the SSH connection.
       </li>
       <li><h3 id = "step_4">Observing DHCP traffic</h3>
+          Now we will filter for DHCP, or UDP ports 67 and 68, traffic in WireShark. In the command prompt, type "ipconfig / renew". This command tells our Windows virtual machine to broadcast on the network a request to the DHCP servers for a new IP address.
+          <br><br>
+          [image - cmd prompt and also some wireshark same image only one]
       </li>
       <li><h3 id = "step_5">Observing DNS traffic</h3>
+          
       </li>
       <li><h3 id = "step_6">Observing RDP traffic</h3>
       </li>
