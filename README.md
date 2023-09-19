@@ -1,6 +1,6 @@
 [IMAGE - banner - some network concept map or wireshark or w/e]
 
-<h1>Inspecting Traffic between Virtual MAchines in Azure</h1>
+<h1>Inspecting Traffic between Virtual Machines in Azure</h1>
 
 This tutorial I examine various network traffic protocols between two Azure virtual machines
 
